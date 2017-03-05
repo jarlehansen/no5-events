@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>No5 Events</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let event of events" (click)="eventSelected(event)">{{event.title}}</button>
+  </ion-list>
+</ion-content>

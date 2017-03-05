@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
-import {HomePage} from "../home/home";
-import {DetailsPage} from "../details/details";
+import {EventsPage} from "../events/events";
+import {AboutPage} from "../about/about";
 
 @Component({
   templateUrl: 'tabs.html'
@@ -11,7 +11,7 @@ export class TabsPage {
   tab2Root: any;
 
   constructor() {
-    this.tab1Root = HomePage;
-    this.tab2Root = DetailsPage;
+    this.tab1Root = EventsPage;
+    this.tab2Root = AboutPage;
   }
 }

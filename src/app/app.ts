@@ -2,7 +2,7 @@ import {Component, ViewChild} from "@angular/core";
 import {Platform, Nav, AlertController} from "ionic-angular";
 import {StatusBar, Push, Splashscreen} from "ionic-native";
 import {TabsPage} from "../pages/tabs/tabs";
-import {DetailsPage} from "../pages/details/details";
+import {AboutPage} from "../pages/about/about";
 
 
 @Component({
@@ -57,7 +57,7 @@ export class Ionic2PushApp {
             text: 'View',
             handler: () => {
               //TODO: Your logic here
-              self.nav.push(DetailsPage, {message: data.message});
+              self.nav.push(AboutPage, {message: data.message});
             }
           }]
         });
@@ -65,7 +65,7 @@ export class Ionic2PushApp {
       } else {
         //if user NOT using app and push notification comes
         //TODO: Your logic on click of push notification directly
-        self.nav.push(DetailsPage, {message: data.message});
+        self.nav.push(AboutPage, {message: data.message});
         console.log("Push notification clicked");
       }
     });

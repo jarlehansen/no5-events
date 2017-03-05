@@ -2,9 +2,9 @@ import {Component} from "@angular/core";
 import {NavParams} from "ionic-angular";
 
 @Component({
-  templateUrl: 'details.html'
+  templateUrl: 'about.html'
 })
-export class DetailsPage {
+export class AboutPage {
   pushMessage: string = "push message will be displayed here";
 
   constructor(public params: NavParams) {
