@@ -26,8 +26,6 @@ hooks/
 platforms/
 plugins/
 plugins/ios.json
-resources/
-!resources/*.png
 $RECYCLE.BIN/
 
 .DS_Store
